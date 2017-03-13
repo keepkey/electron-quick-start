@@ -29,11 +29,18 @@ npm install
 npm start
 ```
 
-Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/).
+## Resources for Learning Electron
 
 ---
 Warning: Windows 10 users might encounter some errors while running `npm start` from Linux Bash for Windows. The reason for this is that Electron is a GUI application, but Linux bash for Windows is just a headless VM without any GUI ( [explained here](https://github.com/electron/electron-quick-start/issues/129#issuecomment-279701745) ).
 A temporary workaround is getting [NodeJS for Windows](https://nodejs.org/en/) and use the node cmd.
+
+- [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
+- [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
+- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
+- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
+- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
+- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
 ## Other Example Apps
 
@@ -41,4 +48,6 @@ For more example apps, see the
 [list of boilerplates](http://electron.atom.io/community/#boilerplates)
 created by the awesome electron community.
 
-#### License [CC0 1.0 (Public Domain)](LICENSE.md)
+## License
+
+[CC0 1.0 (Public Domain)](LICENSE.md)
