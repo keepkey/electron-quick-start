@@ -32,8 +32,8 @@ npm start
 ## Resources for Learning Electron
 
 ---
-Warning: Windows 10 users might encounter some errors while running `npm start` from Linux Bash for Windows. The reason for this is that Electron is a GUI application, but Linux bash for Windows is just a headless VM without any GUI ( [explained here](https://github.com/electron/electron-quick-start/issues/129#issuecomment-279701745) ).
-A temporary workaround is getting [NodeJS for Windows](https://nodejs.org/en/) and use the node cmd.
+Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from Command Prompt
+
 
 - [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
 - [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
