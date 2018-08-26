@@ -1,4 +1,4 @@
-// Modules to control application life and create native browser window
+// Modules to control deviceHandler life and create native browser window
 const {app, BrowserWindow} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will

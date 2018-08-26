@@ -2,18 +2,45 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'none'">
+    <title>KeepKey Quick Start</title>
+    <style>
+      body {
+        height: 100%;
+      }
+      textarea {
+        margin: 0px;
+        width: 100%;
+        height: 200px;
+      }
+      body.dark {
+        background-color: black;
+        color: white;
+      }
+      body.dark textarea {
+        background-color: darkgrey;
+        color: white;
+      }
+    </style>
+    <script>window.$ = window.jQuery = require('jquery');</script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <input id="dark-mode" type="checkbox">Dark theme
+    <h1>Hello Electron!</h1>
+    We are using Node.js <span id="node-version"></span><br/>
+    Chromium <span id="chrome-version"></span><br/>
+    and Electron <span id="electron-version"></span><br/>
+    <br/>
+    <i>If you are having trouble getting program to detect your KeepKey, make sure that you don't have another KeepKey client running.</i>
+    <h2>Information about your KeepKey</h2>
+    Detected: <span id="keepkey-detected">false</span><br/>
+    Firmware version: <span id="firmware-version"></span><br/>
+    Bootloader version: <span id="bootloader-version"></span><br/>
+    Device label: <span id="label"></span><br/>
+    <textarea id="feature-data"></textarea>
 
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./dist/renderer')
     </script>
   </body>
 </html>
