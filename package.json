@@ -1,6 +1,6 @@
 {
   "name": "electron-quick-start",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A minimal KeepKey application in Electron",
   "main": "main.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/bytebuffer": "^5.0.37",
     "@types/jquery": "^3.3.6",
+    "@types/lodash": "^4.14.116",
     "@types/node-hid": "^0.7.0",
     "electron": "^2.0.8",
     "typescript": "^3.0.3"

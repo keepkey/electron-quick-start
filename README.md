@@ -29,12 +29,14 @@ git clone https://github.com/electron/electron-quick-start
 cd electron-quick-start
 
 # Install dependencies
+# Note: This was developed and tested with Node version 8.9.3.
 npm install
 
 # Compile the typescript into javascript
 npm run build
 
 # Run the app
+# Note: It won't work if you have another application running that talks to KeepKey
 npm start
 ```
 
