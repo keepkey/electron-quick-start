@@ -1,9 +1,11 @@
 {
   "name": "electron-quick-start",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimal KeepKey application in Electron",
   "main": "main.js",
   "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
     "start": "electron ."
   },
   "repository": "https://github.com/keepkey/electron-quick-start",
@@ -15,12 +17,13 @@
     "demo"
   ],
   "author": "GitHub",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "devDependencies": {
     "@types/bytebuffer": "^5.0.37",
     "@types/jquery": "^3.3.6",
     "@types/node-hid": "^0.7.0",
-    "electron": "^2.0.8"
+    "electron": "^2.0.8",
+    "typescript": "^3.0.3"
   },
   "dependencies": {
     "@keepkey/device-client": "5.7.0-beta.2",

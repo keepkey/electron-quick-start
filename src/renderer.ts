@@ -1,3 +1,5 @@
+/// <reference path="../node_modules/electron/electron.d.ts" />
+
 import {deviceHandler, CONNECT_EVENT, DISCONNECT_EVENT, FEATURE_EVENT} from "./keepkey-device-handler";
 import "jquery";
 import {Features} from "@keepkey/device-client/dist/global/features";

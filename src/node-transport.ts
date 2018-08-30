@@ -60,7 +60,7 @@ export class NodeTransport extends Transport {
     }
     this.readInProgress = true;
     return new Promise((resolve, reject) => {
-      this.hid.read((error, data) => {
+      this.hid.read((error, data: any) => {
         if (error) {
           console.error('Error while reading:', error);
           this.readInProgress = false;
@@ -115,7 +115,7 @@ export class NodeTransport extends Transport {
 
   private getMessageFragment(receivedMessage: any) {
     return new Promise((resolve) => {
-      this.hid.read((error, data) => {
+      this.hid.read((error, data: any) => {
         let bbData: ByteBuffer = ByteBuffer.wrap(data);
 
         receivedMessage.bufferBB.append(
